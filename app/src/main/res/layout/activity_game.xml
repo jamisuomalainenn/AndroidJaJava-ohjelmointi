@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="166dp"
+        android:autoSizeTextType="uniform"
+        android:text="GameDemo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp" />
+
+    <ImageButton
+        android:id="@+id/imageView4"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:orientation="vertical"
+        app:flow_wrapMode="aligned"
+        app:srcCompat="@drawable/icon_name"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <ImageButton
+        android:id="@+id/imageView3"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:orientation="vertical"
+        app:flow_wrapMode="aligned"
+        app:srcCompat="@drawable/icon_name"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <ImageButton
+        android:id="@+id/imageView6"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:orientation="vertical"
+        app:flow_wrapMode="aligned"
+        app:srcCompat="@drawable/icon_name"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <ImageButton
+        android:id="@+id/imageView5"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:orientation="vertical"
+        app:flow_wrapMode="aligned"
+        app:srcCompat="@drawable/icon_name"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="353dp"
+        android:layout_height="469dp"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="imageView6,imageView4,imageView3,imageView5"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221" />
+</androidx.constraintlayout.widget.ConstraintLayout>

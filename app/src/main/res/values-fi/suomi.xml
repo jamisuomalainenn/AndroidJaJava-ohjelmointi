@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><string name="app_name">Terve Maailma</string>
+    <string name="app_name2">Maailma Terve</string>
+    <string name="button">Aloita</string>
+    <string name="game_button">Pelaa</string>
+</resources>

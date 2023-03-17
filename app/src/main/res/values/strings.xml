@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hello World</string>
+    <string name="app_name2">World Hello</string>
+    <string name="game_button">Play</string>
+    <string name="button">Start</string>
+    <string name="title_activity_botton_navigation">BottonNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

@@ -2,6 +2,7 @@ package com.example.androidkehitys.companies;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +21,15 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+
 public class DataActivity extends AppCompatActivity {
+
+
+    private RecyclerView recyclerView;
+    private ProgressBar progressBar;
+    private RecyclerAdapter adapter;
+    private ArrayList<String> itemList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +73,10 @@ public class DataActivity extends AppCompatActivity {
                             } catch (JSONException e) {
                                 throw new RuntimeException(e);
                             }
+
+
                         }
+
                     }, new Response.ErrorListener() {
 
                         @Override
@@ -74,9 +86,16 @@ public class DataActivity extends AppCompatActivity {
                         }
                     });
 
+
             jsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(10 * 1000, 1, 1.0f));
             requestQueue.add(jsonObjectRequest);
         }
-
+        //private void setupView() {
+        //    progressBar.setVisibility(View.GONE);
+//
+  //          adapter = new RecyclerAdapter(itemList);
+    //        adapter.notifyDataSetChanged();
+      //      recyclerView.setAdapter(adapter);
+       // }
     }
 }

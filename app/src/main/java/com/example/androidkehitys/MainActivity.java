@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
         playBtn = (Button) findViewById(R.id.game_button);
         playBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
 
     }
 

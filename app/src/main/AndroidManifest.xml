@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <!-- Antaa sovelluksen käyttää tarkkaa sijaintia. -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Antaa sovelluksen käyttää likimääräistä sijaintia. -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Pakollinen, jotta voidaan käyttää kameralaitetta. -->
     <uses-permission android:name="android.permission.CAMERA" /> <!-- Antaa sovellusten muodostaa yhteyden pariliitettyihin Bluetooth-laitteisiin. -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
         tools:ignore="ProtectedPermissions" />
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -19,12 +19,17 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidkehitys"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
-        <!--receiver
+        <activity
+            android:name=".companies.DataActivity"
+            android:exported="false" />
+        <!--
+        receiver
             android:name=".AirplaneModeReceiver"
             android:enabled="true"
-            android:exported="true"></receiver-->
-
+            android:exported="true"></receiver
+        -->
         <activity
             android:name=".BottonNavigation"
             android:exported="true"
@@ -41,7 +46,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

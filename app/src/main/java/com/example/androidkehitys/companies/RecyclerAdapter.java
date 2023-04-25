@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidkehitys.MainActivity;
 
-public class RecyclerAdapter {
+/*public class RecyclerAdapter {
     private ArrayList<DataModel> dataSet;
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
@@ -27,7 +27,7 @@ public class RecyclerAdapter {
         }
     }
 
-    public CustomAdapter(ArrayList<DataModel> data) {
+    /*public CustomAdapter(ArrayList<DataModel> data) {
         this.dataSet = data;
     }
 
@@ -42,8 +42,8 @@ public class RecyclerAdapter {
         MyViewHolder myViewHolder = new MyViewHolder(view);
         return myViewHolder;
     }
-
-    @Override
+*/
+  /*  @Override
     public void onBindViewHolder(final MyViewHolder holder, final int listPosition) {
 
         TextView textViewName = holder.textViewName;
@@ -58,7 +58,6 @@ public class RecyclerAdapter {
     @Override
     public int getItemCount() {
         return dataSet.size();
-    }
-}
-
+    }*/
+//}
 

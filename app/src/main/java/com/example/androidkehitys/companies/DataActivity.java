@@ -28,7 +28,7 @@ public class DataActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private ProgressBar progressBar;
-    private RecyclerAdapter adapter;
+    //private RecyclerAdapter adapter;
     private ArrayList<String> itemList = new ArrayList<>();
 
     @Override

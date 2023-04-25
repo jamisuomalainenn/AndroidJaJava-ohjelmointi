@@ -22,37 +22,39 @@
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/latitude"
+        android:id="@+id/latitudeField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/latitude"
-        app:layout_constraintBottom_toBottomOf="@+id/address"
+        app:layout_constraintBottom_toBottomOf="@+id/addressField"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/latitudeText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/longitude"
+        android:id="@+id/longitudeField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/longitude"
-        app:layout_constraintBottom_toTopOf="@+id/latitude"
+        app:layout_constraintBottom_toTopOf="@+id/latitudeField"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints,UnknownId">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/longitudeText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/address"
+        android:id="@+id/addressField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/address"
@@ -61,8 +63,21 @@
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addressText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hae"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/text_dashboard"
+        app:layout_constraintTop_toTopOf="@+id/longitudeField"
+        app:layout_constraintVertical_bias="0.311" />
 </androidx.constraintlayout.widget.ConstraintLayout>

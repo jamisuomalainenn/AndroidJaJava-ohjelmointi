@@ -5,3 +5,11 @@ alapuolella on rajapinnasta haku, tehtävää en saanut valmiiksi, mutta se hake
 ja palauttaa "hello world" -tekstin. Alin nappi avaa "Guess" -pelin, joka kyllä toimii, mutta siinä ei ole pisteytystä tms.
 Dashboard -fragmentissa on karttatehtävä, joka ei ole valmis. Notifications -fragmentisa on ajastin, joka laskee valitun määrän sekunteja. Napit laskurin alla
 käynnistää, pysäyttää ja lopettaa ajastuksen.
+
+
+TENTTI!!!! -----
+Tehtävässä kaikki toimii kuin pitääkin! Tenttiin liittyvät tiedostot ovat: 
+Aloitusnäyttö: fragment_home.xml, HomeFragment -luokka
+Tehtävänäkymä: activity_taxi.xml, TaxiActivity -luokka
+
+Kiitos kurssista!! :-)

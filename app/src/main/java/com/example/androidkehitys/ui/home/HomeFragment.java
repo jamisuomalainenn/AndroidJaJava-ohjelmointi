@@ -90,6 +90,7 @@ private FragmentHomeBinding binding;
             }
         });
 
+        //tässä avataan tentti!
         taxiBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.d("BUTTONS", "TAXIBUTTON Clicked!!!");

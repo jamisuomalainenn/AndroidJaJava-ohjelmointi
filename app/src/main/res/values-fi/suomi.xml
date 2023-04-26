@@ -3,4 +3,11 @@
     <string name="app_name2">Maailma Terve</string>
     <string name="button">Aloita</string>
     <string name="game_button">Pelaa</string>
+    <string name="title_activity_botton_navigation">Alapalkki</string>
+    <string name="title_home">Koti</string>
+    <string name="title_dashboard">Taulukko</string>
+    <string name="title_notifications">Ilmoitukset</string>
+    <string name="latitude">Korkeus</string>
+    <string name="longitude">Leveys</string>
+    <string name="address">Osoite</string>
 </resources>

@@ -18,6 +18,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.androidkehitys.GameActivity;
 import com.example.androidkehitys.R;
+import com.example.androidkehitys.TaxiActivity;
 import com.example.androidkehitys.companies.DataActivity;
 import com.example.androidkehitys.databinding.FragmentHomeBinding;
 
@@ -29,6 +30,7 @@ public class HomeFragment extends Fragment {
     private Button playBtn;
     private Button searchBtn;
     private EditText searchInput;
+    private Button taxiBtn;
 
 
 
@@ -66,9 +68,10 @@ private FragmentHomeBinding binding;
         searchBtn = (Button) root.findViewById(R.id.search_button);
         playBtn = (Button) root.findViewById(R.id.game_button);
         searchInput = (EditText) root.findViewById(R.id.company_name);
+        taxiBtn = (Button) root.findViewById(R.id.taxi_button);
         playBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.d("BUTTONS", "Play game button clicked");
+                Log.d("BUTTONS", "Play game button clicked!!!");
 
 
                 Intent i = new Intent(v.getContext(), GameActivity.class);
@@ -83,6 +86,15 @@ private FragmentHomeBinding binding;
                 Intent i = new Intent(v.getContext(), DataActivity.class);
                 i.putExtra("value1", searchInput.getText().toString());
 
+                startActivity(i);
+            }
+        });
+
+        taxiBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.d("BUTTONS", "TAXIBUTTON Clicked!!!");
+
+                Intent i = new Intent(v.getContext(), TaxiActivity.class);
                 startActivity(i);
             }
         });

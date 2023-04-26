@@ -1,5 +1,6 @@
 package com.example.androidkehitys;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
     private Button testBtn;
     private TextView helloText;
     private Button playBtn;
+    private Button taxiBtn;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -49,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         playBtn = (Button) findViewById(R.id.game_button);
         playBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.d("BUTTONS", "Play game button clicked");
+                Log.d("BUTTONS", "Play game button clicked!!!");
 
 
                 Intent i = new Intent(MainActivity.this, GameActivity.class);
@@ -58,6 +61,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        taxiBtn = (Button) findViewById(R.id.taxi_button);
+        taxiBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.d("BUTTONS", "Taxi button clicked");
+
+                Intent i = new Intent(MainActivity.this, TaxiActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
 
